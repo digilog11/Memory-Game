@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Memory </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div class="topnav">
+        <div>
+            <p class="player" id="p1" >Player 1</p>
+            <p class="points" id="points_p1">0</p>
+        </div>
+        <div id="player2">
+            <p class="player" id="p2" >Player 2</p>
+            <p class="points" id="points_p2">0</p>
+        </div>
+        <div class="textButtons" id="addPlayer">
+            <button onclick="addPlayer()">Add Player</button>
+        </div>
+        <div class="textButtons">
+            <button onclick="prepareGame()">New Game</button>
+        </div>
+        <div class="textButtons right">
+            <p>Picture Number</p>
+            <input type="number" id="picture_number" placeholder="12" value="12" />
+            <button onclick="setPictureNumber()">Set</button>
+        </div>
+        <div class="textButtons right">
+            <button class="resize" onclick="increaseSize()">+</button>
+            <button class="resize" onclick="decreaseSize()">-</button>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="flex-container" id="pictures_container"></div>
+    </div>
+
+    <div id="footer"> </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
